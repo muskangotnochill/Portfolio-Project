@@ -1,0 +1,216 @@
+/* =======================================
+   Project: Personal Portfolio Website (Lab 2)
+   Author: Muskan
+   ======================================= */
+
+/* -------------------------------
+   Colors & Fonts in CSS
+--------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa; /* soft background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------
+   CSS Selectors & Properties
+--------------------------------*/
+h1, h2 {
+  color: #002d72; /* deep blue heading */
+  text-align: center;
+}
+
+a {
+  color: #002d72;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3; /* lighter blue hover */
+}
+
+/* -------------------------------
+   Box Model (padding, margin, border)
+--------------------------------*/
+section {
+  margin: 40px 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+/* -------------------------------
+   Header and Navigation
+--------------------------------*/
+header {
+  background-color: #002d72;
+  color: white;
+  padding: 15px 1;
+  text-align: center;
+  position: sticky; /* positioning */
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+}
+
+/* -------------------------------
+   Hero Section
+--------------------------------*/
+#hero {
+  background-color: #e8f1ff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 8px;
+}
+
+/* -------------------------------
+   About Section
+--------------------------------*/
+#about {
+  text-align: center;
+}
+
+#about img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 2px solid #002d72;
+}
+
+/* -------------------------------
+   Projects Section
+--------------------------------*/
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#projects li {
+  background: #f0f8ff;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #002d72;
+  border-radius: 5px;
+}
+
+/* -------------------------------
+   Skills Table
+--------------------------------*/
+#skills {
+  text-align: center;
+}
+
+#skills table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 70%;
+}
+
+#skills th, #skills td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#skills th {
+  background-color: #002d72;
+  color: white;
+}
+
+#skills tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* -------------------------------
+   Contact Form
+--------------------------------*/
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #002d72;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* -------------------------------
+   Footer
+--------------------------------*/
+footer {
+  background-color: #002d72;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* -------------------------------
+   CSS Positioning
+--------------------------------*/
+/* Sticky header is already applied above */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #002d72;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: none;
+}
+
+#back-to-top:hover {
+  background-color: #0056b3;
+}
