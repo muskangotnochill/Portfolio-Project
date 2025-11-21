@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Accessibility Feature -->
@@ -24,69 +24,89 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="hero">
-    <h2>Welcome to My Portfolio</h2>
-    <p>Hello! I’m Muskan, a student learning web development. This is my first portfolio website built with HTML.</p>
-  </section>
+  
 
   <!-- Main Content -->
   <main id="main">
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="images.png" alt="Profile photo of [Your Name]" width="200">
-      <p>I am passionate about coding and technology. This portfolio shows my projects, skills, and how you can reach me.</p>
-    </section>
+    <section id="about" class="hero-container">
+  <div class="hero-text">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Hello! I’m Muskan, a student learning web development. This is my fully responsive portfolio website built with Flexbox, Grid & animations.</p>
+
+    <p>I am passionate about coding and technology. I love building creative UI designs and improving my skills in HTML, CSS, and JavaScript.</p>
+  </div>
+
+  <div class="hero-image">
+    <img src="images.png" alt="Muskan's Profile Photo" />
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill-card">
+      <h3>HTML</h3>
+      <p>Expert</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>CSS</h3>
+      <p>Expert</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Javascript</h3>
+      <p>Learning</p>
+    </div>
+  </div>
+</section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>My Projects</h2>
-      <ul>
-        <li><article><strong>Portfolio Website:</strong> A personal one-page website to showcase your bio, skills and contact details.</article></li>
-        <li><article><strong>Medium Clone:</strong> A simple blog layout that looks like Medium, built only with HTML and CSS.</article></li>
-        <li><article><strong>User Form:</strong> A form webpage with fields like name, email, and message for practicing form handling.</article></li>
-      </ul>
-    </section>
+  <h2>My Projects</h2>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <table border="1" cellpadding="8">
-        <thead>
-          <tr>
-            <th>Skill</th>
-            <th>Level</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Beginner</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Beginner</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>Learning</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <div class="projects-grid">
+    
+    <div class="project-card">
+      <img src="project1.png" alt="Project image">
+      <div class="project-info">
+        <h3>Portfolio Website</h3>
+        <p>A responsive website using Flexbox, Grid, and animations.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="project2.png" alt="Project image">
+      <div class="project-info">
+        <h3>Medium Clone</h3>
+        <p>A blog layout built with HTML/CSS.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="project3.png" alt="Project image">
+      <div class="project-info">
+        <h3>User Form</h3>
+        <p>A clean form with validation-ready fields.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Me</h2>
       <form>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br><br>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
 
         <button type="submit">Send</button>
       </form>
@@ -95,7 +115,8 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 [ ]. All rights reserved.</p>
+    <p>© 2025 Muskan. All rights reserved.</p>
+    <a href="#main" class="footer-skip">Skip to Main Content ⬆</a>
   </footer>
 </body>
 </html>
