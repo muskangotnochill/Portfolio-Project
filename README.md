@@ -1,3 +1,4 @@
+##This Project includes Assignment 1 and Assigment 2 as well.
 # Web Dev I — Lab 3: Responsive Personal Portfolio Website
 
 This project is a **fully responsive one-page portfolio website** built as part of **Lab 3** for the Web Development course. It demonstrates modern CSS techniques including **Flexbox**, **Grid**, **media queries**, **animations**, **hover effects**, and **accessible navigation** structures.
